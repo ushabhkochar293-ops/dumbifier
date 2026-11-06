@@ -9,6 +9,7 @@ const weatherIcon = document.querySelector(".weather-icon");
       document.querySelector(".error").style.display = "block";
       document.querrySelector(".weather").style.display = "none";
     } 
+    else{
     var data = await response.json();
     
     console.log(data);
@@ -35,6 +36,8 @@ const weatherIcon = document.querySelector(".weather-icon");
       weatherIcon.src = "./images/snow.png";
    }
  document.querySelector(".weather").style.display = "block";
+ document.querySelector(".error").style.display = "none";
+}
 }
 serchbotton.addEventListener("click", ()=>{
  getweather(serchbox.value);})
