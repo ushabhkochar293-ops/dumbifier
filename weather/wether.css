@@ -29,7 +29,7 @@ body::after{
     transition:opacity 1.5s ease-in-out;
 }
 body.bg-clear{background: linear-gradient(135deg,#ff7e5f 0%,#feb47b 100%);}
-body.bg-clear::before{opacity:1; background:radial-gradient(circle at 10% 10%, rgba(255,255,255,0.4) 0%, transparent 60%); animation : sunGlow 8s ease-in-out infinite alternate;}
+body.bg-clear::before{opacity:1; background:radial-gradient(circle at 10% 10%, rgba(255,255,255,0.4) 0%, transparent 60%); animation :sunGlow 8s ease-in-out infinite alternate;}
 @keyframes sunGlow{0% {transform:scale(1); opacity:0.3;}100% { transform: scale(1.2); opacity:0.6;}}
 
 body.bg-clouds { background: linear-gradient(135deg,#ff7e5f 0%,#feb47b 100%);}
@@ -38,19 +38,19 @@ body.bg-clouds::before{opacity:0.25%; width:300%; background-image:url('https://
 
 body.bg-rain { background:linear-gradient(135deg,#0f2027 0%, #203a43 100%);}
 body.bg-rain::before {opacity:0.3; background-image:linear-gradient(90deg,rgba(255,255,255,0.15) 1px, transparent 1px), linear-gradient(90deg,rgba(255,255,255,0.1) 1px, transparent 1px); background-size:80px 100%, 60px 100%; background-position:0 0, 40px 0; animation:heavyRain 0.6s linear infinite; }
-@keyframes HeavyRain{ 0% { background-position:0 0, 40px 0;} 100%{ background-position: -20px 800px, 10px 600px;}}
+@keyframes heavyRain{ 0% { background-position:0 0, 40px 0;} 100%{ background-position: -20px 800px, 10px 600px;}}
 
 body.bg-drizzle{ background: linear-gradient(135deg,#2c3e50 0%, #3498db 100%); }
 body.bg-drizzle::before{ opacity:0.6; background-image: radial-gradient(circle at 10px 10px, rgba(255,255 255,0.4) 2px, transparent 3px), radial-gradient(circle at 40px 50px, rgba(255,255,255,0.4)1.5px,transparent 2.5px); background-size: 120px 240px; animation:windowDrizzle 4s linear infinite;}
 @keyframes windowDrizzle{ 0%{ background-position: 0 0;} 100% {background-position:10px 240px;}}
 
 body.bg-snow{background:linear-gradient(135deg,#0B132B 0%, #1C2541 100% );}
-body.bg-snow::before{ opacity: 0.8;background-image:radial-gradient(circle at 30% 20%, #fff 2px, transparent 3px), radial-gradient(circle at 70% 40%, #fff 3px, transparent 4px); background-size: 300px 300px; animation: fullSnow 8s linear infinite;}
-body.bg-snow::after{ opacity: 0.5; background-image:radial-gradient( circle at 10% 60%, #fff 4px, transparent 5px),radial-gradient(circle at 85% 10%, #fff 2.5px, transparent 3.5px); background-size: 400px 400px; animation: fullSnow 14s linear infinite; animation-delay: -4s;}
+body.bg-snow::before{ opacity: 0.8;background-image:radial-gradient(circle at 30% 20%, #fff 2px, transparent 3px), radial-gradient(circle at 70% 40%, #fff 3px, transparent 4px); background-size: 300px 300px; animation:fullSnow 8s linear infinite;}
+body.bg-snow::after{ opacity: 0.5; background-image:radial-gradient( circle at 10% 60%, #fff 4px, transparent 5px),radial-gradient(circle at 85% 10%, #fff 2.5px, transparent 3.5px); background-size: 400px 400px; animation:fullSnow 14s linear infinite; animation-delay: -4s;}
 @keyframes fullSnow{ 0% { background-position: 0px 0px; transform:translateX(0);}50%{ transform: translateX(30px);} 100% { background-position: 50px 400px; transform: traslate(0);}}
 
 body.bg-mist { background: linear-gradient(135deg,#2b3a42 0%, #4f6d7a 100%);}
-body.bg-mist::before{ opacity:0.3; background:radial-gradient(circle at 50% 50%, rgba(255,255,255,0.2) 0%, transparent 70%); background-size: 200% 200px; animation: driftingMist 10s ease-in-out infinite alternate; }
+body.bg-mist::before{ opacity:0.3; background:radial-gradient(circle at 50% 50%, rgba(255,255,255,0.2) 0%, transparent 70%); background-size: 200% 200px; animation:driftingMist 10s ease-in-out infinite alternate; }
 @keyframes driftingMist{ 0% { transform: translateX(-20%) translateY(-10px);} 100% { tranform: translateX(20%) translateY(10px);}}
 
 .card{
